@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorig - Contacto</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="header-iconos">
+            <a href="https://www.facebook.com" target="_blank"><img src="./imagenes/iconos/facebookNegro.png" width="50" alt="iconoFacebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./imagenes/iconos/instagramNegro.png" width="50" alt="iconoInstagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="./imagenes/iconos/youtubeNegro.png" width="50" alt="iconoYoutube"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="./imagenes/iconos/whatsappNegro.png" width="50" alt="iconoWhatsapp"></a>
+        </div> 
+                
+        <h2 class="header-titulo">Panorig</h2>
+
+                 
+        <nav class="header-menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+<form class="contacto-formulario" action="enviar.php" method="get" enctype="text/plain">
+                          
+     <p class="nombre-mail"><label for="nombre">Nombre</label>
+     <input class="input" type="text" id="nombre" placeholder="Ingrese su nombre" required>
+     <br>
+     <label for="mail">Email</label>
+     <input type="email" id="mail" placeholder="Ingrese su mail" required>
+    </p>
+     <br>
+     <br>
+    <p class="elegir">Elige los productos que mas te gusten
+     <br>
+     <br>
+     <input type="checkbox" name="frances" id="frances" value="1">Pan Frances
+     <input type="checkbox" name="criollo" id="criollo" value="2">Pan Criollo
+     <input type="checkbox" name="dulce" id="dulce" value="2">Pan Dulce
+     <input type="checkbox" name="facturas" id="facturas" value="2">Facturas
+     <input type="checkbox" name="grisines" id="grisines" value="2">Grisines
+    </p>
+     <br>
+     <br>
+    <p class="conociste">¿Cómo nos conociste?
+     <select name="" id="">
+     <option value="0">Amigos</option>
+     <option value="1">Son del barrio</option>
+     <option value="2">Internet/Redes Sociales</option>
+     <option value="3">Otros</option>
+     </select>  
+    </p>
+     <br>
+     <br>
+     <p class="mensaje"><label for="multi">Mensaje</label>
+     <textarea name="multi" id="multi" cols="30" rows="5"></textarea>
+    </p>
+     <br>
+     <br>
+    <div class="botones"></div><input type="reset" value="Borrar todo">
+     <input type="submit" value="Enviar ahora">
+    </div>
+    <div class="contacto">
+        <p class="datos-contacto">DIRECCION: Av. La Cordillera 3608</p>
+        <p class="datos-contacto">TELÉFONO: 0351 154084026</p>
+        <p class="datos-contacto">CORREO: panificadorapanorig@gmail.com</p>
+    </div>
+    
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7801788846036!2d-64.22479594922332!3d-31.365044700817734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432993cf74a9bff%3A0x7557739eb9b00fef!2sLa%20Cordillera%203608%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1648123264716!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</form>
+
+
+<footer>
+    <p class="footer-p">2022</p>
+    <div class="footer-iconos">            
+        <a href="https://www.facebook.com" target="_blank"><img src="./imagenes/iconos/facebookNegro.png" width="30" alt="iconoFacebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./imagenes/iconos/instagramNegro.png" width="30" alt="iconoInstagram"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="./imagenes/iconos/youtubeNegro.png" width="30" alt="iconoYoutube"></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img src="./imagenes/iconos/whatsappNegro.png" width="30" alt="iconoWhatsapp"></a>
+    </div>
+    </footer>
+
+</body>
+</html>

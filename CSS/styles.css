@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* TODAS LAS PAGINAS */
+
+header{
+    height: 100px;
+    
+}
+
+header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: brown;
+    font-size: 50px;
+
+}
+
+header .header-iconos{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+    
+}
+
+header .header-iconos img{
+    width: 40px;
+    padding: 15px;
+}
+
+.header-menu ul{
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    left: 19%;
+    top: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+        
+}
+
+.header-menu ul li{
+    
+    display: inline-block;
+    position: relative;
+    padding: 0 10px 0 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    right: 10px;
+    bottom: 10px;
+}
+
+.header-menu ul li:hover{
+    background-color: #00000073;
+}
+
+.header-menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+footer{
+    height: 50px;
+    
+    
+}
+
+footer .footer-p{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    left: 20px;
+    
+
+}
+
+footer .footer-iconos{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    
+}
+
+
+
+
+
+
+
+
+/* INDEX */
+
+
+
+.texto-index{
+/*     display: grid; */
+    width: 97%;
+    height: 80px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    
+    
+}
+
+
+.imagen-index{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+ /*    padding: 5px; */
+   
+}
+
+.imagen-index img{
+    width: 100%;
+    height: auto;   
+    padding: 5px;
+    box-shadow: 0px 0px 3px 1px #00000073;
+}
+
+
+
+
+/* NOSOTROS */
+
+.body-nosotros{    
+   height: 700px;
+    width: 100%;
+    margin: 10px;
+}
+
+.nosotros-texto{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    width: 50%;
+    height: 50%;/* 
+    border: 2px solid black; */
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nosotros-video{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    top: 215px;
+}
+
+.nosotros-publicidad{
+    position: relative;
+    display: block;
+  
+
+}
+
+/* PRODUCTOS */
+
+.panificacion{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;    
+}
+
+.grid-panificacion-imagenes{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 2px;
+    padding-left: 5px;
+    
+    
+}
+  
+.panificacion-imagenes img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 3px 1px #00000073;
+}
+
+.dulces{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;    
+}
+
+.grid-dulces{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 2px;
+    padding-left: 5px;
+}
+
+.grid-dulces img{
+    position: relative;
+  
+    
+    box-shadow: 0px 0px 3px 1px #00000073;
+}
+
+.tortas{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;   
+}
+
+.grid-tortas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 2px;
+    padding-left: 5px;
+}
+
+.grid-tortas img{
+    position: relative;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 3px 1px #00000073;
+}
+
+
+
+/* SERVICIOS */
+
+
+
+.servicios-empresas{
+    
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.servicios-empresas .titulo{
+ 
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.servicios-empresas .texto{
+    
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 50px;
+    text-align: left;
+
+}
+
+.servicios-empresas img{
+    position: relative;
+    width: 1fr;
+    height: 120px;
+    }
+
+.servicios-eventos{
+   
+    position: relative;
+    width: 100%;
+    margin-left: 15px;
+    
+}
+
+.servicios-eventos .titulo{
+    
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: right;
+    
+}
+
+.servicios-eventos .texto{
+   
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-bottom: 50px;
+    
+
+    
+}
+
+.servicios-eventos img{
+    position: relative;
+    display: inline-block;
+    width: 1fr;
+    height: 120px;
+    
+    }
+
+.servicios-horneado{
+   
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.servicios-horneado .titulo{
+ 
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.servicios-horneado .texto{
+   
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.servicios-horneado img{
+    position: relative;
+    width: 1fr;
+    height: 120px;
+}
+
+
+
+/* CONTACTO */
+
+.contacto-formulario{
+
+    
+    height: 700px;
+    margin: 10px;
+}
+
+.nombre-mail{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    align-content: center;
+    
+}
+
+.nombre-mail label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+}
+
+.nombre-mail input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 50%;
+    height: 20px;
+}
+
+.elegir{
+    border-top: 1px solid black;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.conociste{
+    border-top: 1px solid black;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.mensaje{
+    border-top: 1px solid black;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.botones{
+    position: relative;
+    top: 0;
+    left: 5%;
+}
+
+.contacto{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 215px;
+    width: 45%;
+    height: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid black;
+
+}
+
+iframe{
+    display: inline-block;
+    position: absolute;
+    width: 45%;
+    height: 300px;
+    right: 0;
+    top: 300px;
+}
+
+@media screen and (min-width: 501px) {
+
+ header{
+     height: 100px;
+ }
+ 
+    header h2{
+     text-align: left;
+ }
+ 
+ header .header-iconos{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;    
+ }
+
+ header .header-iconos img{
+     width: 20px;
+     padding: 5px;
+     top: 50px;
+ }
+
+ .header-menu ul{
+     display: inline-block;
+     left: 0;
+     font size: 40p;
+ }
+
+ .grid-panificacion-imagenes{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .grid-dulces{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ .grid-tortas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+}
+
+
+
+
