@@ -4,98 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panorig - Contacto</title>
+    <title>Panificadora Panorig</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./imagenes/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
-<body>
+<body class="body bg-warning">
+    
 
-    <header>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PANORIG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-rgb(255, 255, 0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+</header>
 
-        <div class="header-iconos">
-            <a href="https://www.facebook.com" target="_blank"><img src="./imagenes/iconos/facebookNegro.png" width="50" alt="iconoFacebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="./imagenes/iconos/instagramNegro.png" width="50" alt="iconoInstagram"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="./imagenes/iconos/youtubeNegro.png" width="50" alt="iconoYoutube"></a>
-            <a href="https://www.whatsapp.com" target="_blank"><img src="./imagenes/iconos/whatsappNegro.png" width="50" alt="iconoWhatsapp"></a>
-        </div> 
-                
-        <h2 class="header-titulo">Panorig <span>&#160;</span></h2>
-
-                 
-        <nav class="header-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-
-    </header>
-
-
-<form class="contacto-formulario" action="enviar.php" method="get" enctype="text/plain">
-                          
-     <p class="nombre-mail"><label for="nombre">Nombre</label>
-     <input class="input" type="text" id="nombre" placeholder="Ingrese su nombre" required>
-     <br>
-     <label for="mail">Email</label>
-     <input type="email" id="mail" placeholder="Ingrese su mail" required>
-    </p>
-     <br>
-     <br>
-    <p class="elegir">Elige los productos que mas te gusten
-     <br>
-     <br>
-     <input type="checkbox" name="frances" id="frances" value="1">Pan Frances
-     <input type="checkbox" name="criollo" id="criollo" value="2">Pan Criollo
-     <input type="checkbox" name="dulce" id="dulce" value="2">Pan Dulce
-     <input type="checkbox" name="facturas" id="facturas" value="2">Facturas
-     <input type="checkbox" name="grisines" id="grisines" value="2">Grisines
-    </p>
-     <br>
-     <br>
-    <p class="conociste">¿Cómo nos conociste?
-     <select name="" id="">
-     <option value="0">Amigos</option>
-     <option value="1">Son del barrio</option>
-     <option value="2">Internet/Redes Sociales</option>
-     <option value="3">Otros</option>
-     </select>  
-    </p>
-     <br>
-     <br>
-     <p class="mensaje"><label for="multi">Mensaje</label>
-     <textarea name="multi" id="multi" cols="30" rows="5"></textarea>
-    </p>
-     <br>
-     <br>
-    <div class="botones"></div><input type="reset" value="Borrar todo">
-     <input type="submit" value="Enviar ahora">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Nombre</label>
+  <input type="text" class="form-control bg-warning" id="formGroupExampleInput" >
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Correo Electrónico</label>
+  <input type="text" class="form-control bg-warning" id="formGroupExampleInput2" >
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+  <textarea class="form-control bg-warning" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button>
+  <div type="submit" class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+      </svg>
     </div>
-    <div class="contacto">
+  </div>
+  <span>Enviar</span>
+</button>
+
+    <div class="contacto text-center p-2">
         <p class="datos-contacto">DIRECCION: Av. La Cordillera 3608</p>
         <p class="datos-contacto">TELÉFONO: 0351 154084026</p>
         <p class="datos-contacto">CORREO: panificadorapanorig@gmail.com</p>
     </div>
     
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7801788846036!2d-64.22479594922332!3d-31.365044700817734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432993cf74a9bff%3A0x7557739eb9b00fef!2sLa%20Cordillera%203608%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1648123264716!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-</form>
-
-
-<footer>
-    <p class="footer-p">2022</p>
-    <div class="footer-iconos">            
-        <a href="https://www.facebook.com" target="_blank"><img src="./imagenes/iconos/facebookNegro.png" width="30" alt="iconoFacebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="./imagenes/iconos/instagramNegro.png" width="30" alt="iconoInstagram"></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="./imagenes/iconos/youtubeNegro.png" width="30" alt="iconoYoutube"></a>
-        <a href="https://www.whatsapp.com" target="_blank"><img src="./imagenes/iconos/whatsappNegro.png" width="30" alt="iconoWhatsapp"></a>
+    <div class="embed-container-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7801788813517!2d-64.22479058556347!3d-31.365044700907465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432993cf74a9bff%3A0x7557739eb9b00fef!2sLa%20Cordillera%203608%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1649938420164!5m2!1ses-419!2sar" frameborder="0" allowfullscreen></iframe>
     </div>
-    </footer>
 
+
+
+
+
+<footer class="text-center text-lg-start text-">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <div class="me-5 d-none d-lg-block">
+        <span>Encuentrenos en nuestras redes sociales:</span>
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com" class="me-4 text-reset">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com" class="me-4 text-reset">
+            <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.whatsapp.com" class="me-4 text-reset">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        </div>
+    </section>
+
+    <div class="text-center p-4">
+      © 2022 Copyright: Matias Lascano
+    </div>
+
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
 </body>
 </html>
