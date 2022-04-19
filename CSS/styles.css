@@ -427,8 +427,13 @@ button {
     }
 
     .col-serv-img img{
-        width: 200px;
-        height: 200px;
+        width: 10rem;
+        height: auto;
+    }
+
+    .containerProductos img{
+        width: 9.5rem;
+        height: auto;
     }
     
 }
