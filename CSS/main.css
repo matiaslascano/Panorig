@@ -6,6 +6,9 @@
 
 .navbar {
   z-index: 100;
+  background-color: #f6e4ad;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
 }
 
 .navbar .navbar-brand {
@@ -25,11 +28,31 @@ footer {
   height: 50px;
 }
 
+.bi-facebook {
+  color: blue;
+}
+
+.bi-youtube {
+  color: red;
+}
+
+.bi-instragram {
+  color: blueviolet;
+}
+
+.bi-whatsapp {
+  color: green;
+}
+
+body {
+  background-color: #fbf2d5;
+}
+
 /* INDEX */
 .container-lg {
   width: 100%;
   padding: 20px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   border-top: 1px solid black;
@@ -84,7 +107,7 @@ footer {
 
 .container-nos p {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
   padding: 5px 20px;
   margin: 5px;
@@ -126,12 +149,12 @@ footer {
   margin-top: 20px;
 }
 
-.containerProductos img {
+.containerProductos .img__panificacion, .containerProductos .img__dulces, .containerProductos .img__tortas {
   opacity: .7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 7rem;
+  width: 9.75rem;
   height: auto;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -139,6 +162,14 @@ footer {
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.containerProductos .img__dulces {
+  border: 3px solid black;
+}
+
+.containerProductos .img__tortas {
+  border: 3px solid grey;
 }
 
 .containerProductos img:hover {
@@ -149,9 +180,14 @@ footer {
 
 /* SERVICIOS */
 .row-serv {
-  margin: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: none;
 }
 
 .row-serv h3 {
@@ -187,6 +223,7 @@ footer {
 }
 
 .mb-3 .form-control {
+  background: #fbf2d5;
   border-color: black;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);

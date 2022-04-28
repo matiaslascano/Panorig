@@ -1,3 +1,16 @@
 footer{
     height: 50px;  
 }
+
+$redesSociales: (
+    facebook: blue,
+    youtube: red,
+    instragram: blueviolet,
+    whatsapp: green,
+);
+
+@each $nombre, $valor in $redesSociales {
+    .bi-#{$nombre} {
+        color: $valor
+    }
+}
