@@ -18,6 +18,10 @@
   color: brown;
 }
 
+.navbar ul a {
+  font-weight: 600;
+}
+
 .navbar ul a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -26,6 +30,14 @@
 
 footer {
   height: 50px;
+}
+
+footer .me-5 {
+  font-weight: 700;
+}
+
+footer .text-center {
+  font-weight: 700;
 }
 
 .bi-facebook {
@@ -190,7 +202,7 @@ body {
   border-top: none;
 }
 
-.row-serv h3 {
+.row-serv .h3 {
   font-weight: 700;
 }
 
