@@ -6,7 +6,8 @@
 
 
 body{
-    background-color: map-get($map: $colores, $key: background);
+    background: url("/imagenes/fondo.png");
+/*     background-color: map-get($map: $colores, $key: background); */
 }
 
 
@@ -28,20 +29,20 @@ body{
     justify-content: center;
     margin: 20px;
     img{
-        opacity: .7;
         display: flex;
         width: 200px;
         height: 200px;
         margin: 0 40px;
-        border: 3px solid white;
+        border: 3px solid #1B4F72;
         border-radius: 10px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        object-fit:fill;
     }
     img:hover{
-        opacity: 1;
-        transform: scale(1.4);
+        transform: scale(1.3);
     }
 }
 
@@ -106,23 +107,22 @@ body{
     .img__panificacion{
         opacity: .7;
         display: flex;
-        width: 9.75rem;
+        width: 9.5rem;
         height: auto;
         margin: 0 auto;
         margin-bottom: 20px;
-        border: 3px solid white;
+        border: 3px solid #1B4F72;
         border-radius: 10px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
     }
     .img__dulces{
         @extend .img__panificacion;
-        border: 3px solid black
     }
     .img__tortas{
         @extend .img__panificacion;
-        border: 3px solid grey
     }
     img:hover{
         opacity: 1;
@@ -143,13 +143,14 @@ body{
     img{
         opacity: .7;
         margin: 10px;
-        width: 8rem;
+        width: 9.5rem;
         height: auto;
-        border: 3px solid white;
+        border: 3px solid #1B4F72;
         border-radius: 10px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
     }
     img:hover{
         opacity: 1;
@@ -166,14 +167,14 @@ body{
         justify-content: center;
     }
     .form-control{
-        background: #fbf2d5;
+        background: white;
         border-color: black;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
     }
     .form-control:hover{
-        background-color: lightgrey;
+        background-color: #5B8FB2;
     }
 }
 .contacto{
@@ -184,7 +185,7 @@ button {
     font-size: 20px;
     font-weight: $negrita;
     background: transparent;
-    color: black;
+    color: #1B4F72;
     padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
@@ -284,13 +285,16 @@ button {
     }
 
     .col-serv-img img{
-        width: 10rem;
+        width: 13rem;
         height: auto;
     }
 
     .containerProductos img{
-        width: 9.5rem;
+        width: 9.95rem;
         height: auto;
+        padding-left: auto;
+        padding-right: auto;
+        display: flex;
     }
     
 }

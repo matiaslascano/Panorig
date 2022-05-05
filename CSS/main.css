@@ -6,8 +6,8 @@
 
 .navbar {
   z-index: 100;
-  background-color: #f6e4ad;
-  border-bottom: 1px solid black;
+  background-color: #1B4F72;
+  border-bottom: 1px solid #1B4F72;
   margin-bottom: 15px;
 }
 
@@ -15,17 +15,28 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
   font-size: 50px;
-  color: brown;
+  margin-left: 40px;
+  color: white;
+}
+
+.navbar .navbar-brand:hover {
+  color: white;
+}
+
+.navbar ul {
+  margin-right: 40px;
 }
 
 .navbar ul a {
   font-weight: 600;
+  color: white;
 }
 
 .navbar ul a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   font-weight: 700;
+  color: white;
 }
 
 footer {
@@ -57,7 +68,8 @@ footer .text-center {
 }
 
 body {
-  background-color: #fbf2d5;
+  background: url("/imagenes/fondo.png");
+  /*     background-color: map-get($map: $colores, $key: background); */
 }
 
 /* INDEX */
@@ -67,8 +79,8 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #1B4F72;
+  border-bottom: 1px solid #1B4F72;
 }
 
 .containerIndex {
@@ -82,23 +94,25 @@ body {
 }
 
 .containerIndex img {
-  opacity: .7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 200px;
   height: 200px;
   margin: 0 40px;
-  border: 3px solid white;
+  border: 3px solid #1B4F72;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .containerIndex img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #carouselIndex {
@@ -123,8 +137,8 @@ body {
   text-align: center;
   padding: 5px 20px;
   margin: 5px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #1B4F72;
+  border-bottom: 1px solid #1B4F72;
 }
 
 .embed-container {
@@ -144,7 +158,7 @@ body {
 
 /* PRODUCTOS */
 .rowPanificacion {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1B4F72;
 }
 
 .rowPanificacion h3 {
@@ -166,22 +180,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 9.75rem;
+  width: 9.5rem;
   height: auto;
   margin: 0 auto;
   margin-bottom: 20px;
-  border: 3px solid white;
+  border: 3px solid #1B4F72;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.containerProductos .img__dulces {
-  border: 3px solid black;
-}
-
-.containerProductos .img__tortas {
-  border: 3px solid grey;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .containerProductos img:hover {
@@ -197,8 +205,8 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #1B4F72;
+  border-bottom: 1px solid #1B4F72;
   border-top: none;
 }
 
@@ -209,12 +217,14 @@ body {
 .col-serv-img img {
   opacity: .7;
   margin: 10px;
-  width: 8rem;
+  width: 9.5rem;
   height: auto;
-  border: 3px solid white;
+  border: 3px solid #1B4F72;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .col-serv-img img:hover {
@@ -235,14 +245,14 @@ body {
 }
 
 .mb-3 .form-control {
-  background: #fbf2d5;
+  background: white;
   border-color: black;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .mb-3 .form-control:hover {
-  background-color: lightgrey;
+  background-color: #5B8FB2;
 }
 
 .contacto {
@@ -254,7 +264,7 @@ button {
   font-size: 20px;
   font-weight: 700;
   background: transparent;
-  color: black;
+  color: #1B4F72;
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: -webkit-box;
@@ -379,11 +389,16 @@ button:active {
     width: 50%;
   }
   .col-serv-img img {
-    width: 10rem;
+    width: 13rem;
     height: auto;
   }
   .containerProductos img {
-    width: 9.5rem;
+    width: 9.95rem;
     height: auto;
+    padding-left: auto;
+    padding-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
