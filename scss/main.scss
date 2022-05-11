@@ -7,7 +7,6 @@
 
 body{
     background: url("/imagenes/fondo.png");
-/*     background-color: map-get($map: $colores, $key: background); */
 }
 
 
@@ -29,12 +28,11 @@ body{
     justify-content: center;
     margin: 20px;
     img{
+        
         display: flex;
-        width: 200px;
-        height: 200px;
-        margin: 0 40px;
-        border: 3px solid #1B4F72;
-        border-radius: 10px;
+        width: 9rem;
+        height: auto;
+        margin: 0 auto;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
@@ -42,7 +40,8 @@ body{
         object-fit:fill;
     }
     img:hover{
-        transform: scale(1.3);
+       
+        transform: scale(1.5);
     }
 }
 
@@ -105,14 +104,11 @@ body{
     align-items: center;
     margin-top: 20px;
     .img__panificacion{
-        opacity: .7;
         display: flex;
-        width: 9.5rem;
+        width: 7rem;
         height: auto;
         margin: 0 auto;
         margin-bottom: 20px;
-        border: 3px solid #1B4F72;
-        border-radius: 10px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
@@ -125,8 +121,7 @@ body{
         @extend .img__panificacion;
     }
     img:hover{
-        opacity: 1;
-        transform: scale(1.25);
+        transform: scale(2);
     }
 }
 
@@ -141,20 +136,16 @@ body{
 }
 .col-serv-img{
     img{
-        opacity: .7;
         margin: 10px;
-        width: 9.5rem;
+        width: 8.5rem;
         height: auto;
-        border: 3px solid #1B4F72;
-        border-radius: 10px;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
     }
     img:hover{
-        opacity: 1;
-        transform: scale(1.25);
+        transform: scale(1.5);
     }
 }
 
@@ -274,6 +265,13 @@ button {
         display: none;
     }
 
+    .containerIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .mb-3{
         margin: 0 auto;
         width: 50%;
@@ -289,12 +287,19 @@ button {
         height: auto;
     }
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: auto;
+    }
+
     .containerProductos img{
         width: 9.95rem;
         height: auto;
         padding-left: auto;
         padding-right: auto;
-        display: flex;
     }
     
 }
