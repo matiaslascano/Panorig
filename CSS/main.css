@@ -184,6 +184,7 @@ body {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+ /*  object-fit: cover; */
 }
 
 .containerProductos img:hover {
@@ -215,6 +216,7 @@ body {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  object-fit: cover;
 }
 
 .col-serv-img img:hover {
